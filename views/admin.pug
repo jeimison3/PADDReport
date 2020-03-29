@@ -1,0 +1,12 @@
+extends layout.pug
+//- login.pug
+
+block content
+    div.demo-layout.mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
+        +user_navigation()
+                +user_nav_avatar('/local/user.jpg', 'Unknown')
+                    +user_nav_avatar_items()
+                +user_nav_items()
+                    +user_nav_newitem('Home', 'home')
+                    +user_nav_newitem('Remove', 'delete')
+                    +user_nav_newitem('Home', 'home')

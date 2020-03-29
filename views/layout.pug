@@ -1,0 +1,30 @@
+//- index.pug
+
+include mixin-component.pug
+
+doctype html  
+html(lang='pt')
+    head
+        link(href='manifest.json', rel='manifest')
+        
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='application-name', content='PADDReport')
+        
+        link(href='/public/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+
+        script(src='/public/jquery/dist/jquery.min.js')
+        script(src="/public/@popperjs/core/dist/umd/popper.min.js")
+        script(src='/public/bootstrap/dist/js/bootstrap.min.js')
+
+        title= 'PADDReport - ' + title
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
+        
+
+        block headers
+        
+        script(src='/local/app.js')
+    body
+        block content
+            

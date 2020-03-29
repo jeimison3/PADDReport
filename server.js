@@ -18,7 +18,12 @@ app.use('/manifest.json', express.static('manifest.json'))
 // Rotas de clientes
 app.get('/', (req, res) => {
     app.set('view engine', 'pug')
-    res.render('index', {title:'PADDReport - Início'})
+    res.render('login', {title:'Login'})
+})
+
+app.get('/login', (req, res) => {
+    app.set('view engine', 'pug')
+    res.render('login', {title:'Login'})
 })
 
 app.post('/login', urlencodedParser, function (req, res) {
