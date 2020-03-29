@@ -9,8 +9,10 @@ node ./server.js
 ```
 Recomendado uso do `nodemon`
 
-
-## Plataforma web PADD
+# Pendências:
+- Usar estrutura de herança do pugjs para criar layouts e, posteriormente, fazer um layout final para cada tipo de usuário.
+- Criar página de login. Será a página inicial.
+- Definir qual SGBD (talvez mongodb?).
 
 ## Fontes de referência
 Relação de links para entender todo o código da plataforma:
