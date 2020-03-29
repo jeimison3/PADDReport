@@ -9,8 +9,13 @@ node ./server.js
 ```
 Recomendado uso do `nodemon`
 
-# Pendências:
+## Features:
+- Pode ser instalado como aplicativo via navegador mobile e desktop.
+- Recurso de carregamento offline funcionando.
+
+## Pendências:
 - Usar estrutura de herança do pugjs para criar layouts e, posteriormente, fazer um layout final para cada tipo de usuário.
+- Focar principalmente em layouts para telas pequenas.
 - Criar página de login. Será a página inicial.
 - Definir qual SGBD (talvez mongodb?).
 
