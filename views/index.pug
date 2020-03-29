@@ -1,0 +1,44 @@
+// index.pug
+
+include mixin-component.pug
+
+doctype html  
+html(lang='pt')
+    head
+        link(href='manifest.json', rel='manifest')
+        meta(name='application-name', content='PADDReport')
+
+        link(href='/public/material-design-lite/material.min.css', rel='stylesheet')
+        script(src='/public/material-design-lite/material.min.js')
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+        title= title
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        link(href='/local/styles.css', rel='stylesheet')
+        style.
+            #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+            }
+        script(src='/local/app.js')
+    body
+        div.demo-layout.mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.mdl-layout--fixed-header
+            +user_navigation()
+                +user_nav_avatar('/local/user.jpg', 'Unknown')
+                    +user_nav_avatar_items()
+                +user_nav_items()
+                    +user_nav_newitem('Home', 'home')
+                    +user_nav_newitem('Remove', 'delete')
+                    +user_nav_newitem('Home', 'home')
+        
+                
+    //+rsdbtn('Sei lá')
+    //+fabbtn('')
+    //    +micon('add')
